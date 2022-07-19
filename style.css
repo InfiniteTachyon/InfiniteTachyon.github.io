@@ -1,0 +1,32 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+
+body {
+  overflow-x: hidden;
+  font-family: 'Cascadia Code', sans-serif;
+  height: 100%;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+textarea {
+  /**
+  left: -1000px;
+  position: absolute;
+  **/
+  left: -1000px;
+  position: absolute;
+  
+}
+
+
+.cursor{
+  opacity: 1;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

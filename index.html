@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Infinite Tachyon Terminal</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Terminal Website - (c) 2022. All rights reserved.
+  <p style="white-space: pre;">   
+.___        _____.__       .__  __           ___________             .__                       
+|   | _____/ ____\__| ____ |__|/  |_  ____   \__    ___/____    ____ |  |__ ___.__. ____   ____  
+|   |/    \   __\|  |/    \|  \   __\/ __ \    |    |  \__  \ _/ ___\|  |  <   |  |/  _ \ /    \ 
+|   |   |  \  |  |  |   |  \  ||  | \  ___/    |    |   / __ \\  \___|   Y  \___  (  <_> )   |  \
+|___|___|  /__|  |__|___|  /__||__|  \___  >   |____|  (____  /\___  >___|  / ____|\____/|___|  
+         \/              \/              \/                 \/     \/     \/\/                \/ 
+
+                                                                                            v1.0.1
+  </p>
+  
+  <br>
+  Type <span style="color: yellow;">help</span> to get started.
+  <br>
+  <div id="console-text">
+    <a id="last-line"></a>
+  </div>
+  
+  <p id="terminal-lines"></p>
+  
+  <div onclick="document.getElementById('terminal-input').focus();">
+    <textarea type="text" id="terminal-input" cols="30" rows="2" autofocus="true" onkeypress="typeIt(this,event);" onkeydown="typeIt(this,event)" onkeyup="typeIt(this,event)"></textarea>
+
+    <div id="liner">
+        <b>></b>
+        <span id="current-line"></span><b class="cursor" id="cursor">█</b>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+  <script src="outputs.js"></script>
+
+
+</body>
+
+</html>
