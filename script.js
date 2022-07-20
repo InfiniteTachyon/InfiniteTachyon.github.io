@@ -91,8 +91,10 @@ function options(input){
         str+=this_project[i];
       }
       addLine(str,'',0)
+      break;
     case "socials":
-      addLine('<a href="https://github.com/InfiniteTachyon">Github</a>','', 0);
+      addLine('  <a href="https://github.com/InfiniteTachyon" style="text-decoration: none; color:#DA10CA;">GitHub</a>','', 0);
+      addLine('  <a href="https://www.linkedin.com/in/david-tran-509743201/" style="text-decoration: none; color:#DA10CA;">LinkedIn</a>','',0);
       break;
     case "help":
       str = "<br>";
