@@ -20,7 +20,7 @@ about = [
 
 this_project = [
   '<br>',
-  "This project was inspired my my latest OS Course and is also my first website project! ",
+  "This project was inspired by my latest OS Course and is also my first website project! ",
   'During that OS course, I spent a huge amount of time in the terminal; <br>whether that was ssh-ing into a remote server or using bash commands.',
   " So, I've grown quite fond of the 'terminal asthetic'!",
   '<br><br>',
