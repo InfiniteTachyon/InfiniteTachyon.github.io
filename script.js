@@ -16,7 +16,8 @@ function printToTerminal(){
   lines.innerHTML = innerH;
 }
 
-
+//adds a new line element in html
+//style, time arguments are currently unused.
 function addLine(text, style, time){
   var t="";
   //loops through text to eliminate extra spaces.
@@ -112,6 +113,6 @@ function options(input){
       lastLine = consoleText;
       break;
     default:
-      addLine("This command does not exist. {finish later}",'',0);
+      addLine("This command does not exist.",'',0);
   }
 }
