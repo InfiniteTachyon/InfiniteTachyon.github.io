@@ -7,7 +7,7 @@ help = [
 
 about = [
   '<br>',
-  'Hey, my name David, a 3rd year studying at the University of Calgary. ',
+  'Hey, my name is David, a 3rd year studying at the University of Calgary. ',
   "I'm currently persuing a dual degree of ",
   "<span style='color: orange'>Bachelors of Science in Software Engineering</span>",
   ' <br>and a <span style="color:#87CEEB">Bachelors of Science in Computer Science</span> ',

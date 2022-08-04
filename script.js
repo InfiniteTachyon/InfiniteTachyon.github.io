@@ -94,8 +94,8 @@ function options(input){
       addLine(str,'',0)
       break;
     case "socials":
-      addLine('  <a href="https://github.com/InfiniteTachyon" style="text-decoration: none; color:#DA10CA;">GitHub</a>','', 0);
-      addLine('  <a href="https://www.linkedin.com/in/david-tran-509743201/" style="text-decoration: none; color:#DA10CA;">LinkedIn</a>','',0);
+      addLine('  <a href="https://github.com/InfiniteTachyon" target="_blank" style="text-decoration: none; color:#DA10CA;">GitHub</a>','', 0);
+      addLine('  <a href="https://www.linkedin.com/in/david-tran-509743201/" target="_blank" style="text-decoration: none; color:#DA10CA;">LinkedIn</a>','',0);
       break;
     case "help":
       str = "<br>";
@@ -104,6 +104,10 @@ function options(input){
         str+="<br>";
       }
       addLine(str, '',0);
+      break;
+    case "email":
+      str = "<br>";
+      window.open("mailto:t60.david@gmail.com");
       break;
     case "clear":
 

@@ -30,3 +30,7 @@ textarea {
     opacity: 0;
   }
 }
+
+a:hover{
+  background-color: #63e0b4;
+}

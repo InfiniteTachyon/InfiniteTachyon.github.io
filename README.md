@@ -15,7 +15,7 @@ The main challenge in this project was translating the design that I had in my h
 This project may look complete but, there are many more updates I'd like to make to it! In the future I'd like to:
 - Add certain Asynchronous Functions functionality
 - Add auto scroll
-- Add text highlighting on links when hovering
-- Add 'email' command
+- ~~Add text highlighting on links when hovering~~
+- ~~Add 'email' command~~
 - Add 'temperature' command
 - Optimize text-field focussing
