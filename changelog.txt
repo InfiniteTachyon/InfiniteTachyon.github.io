@@ -1,0 +1,8 @@
+V1.0.1
+- Deployed to GitHub
+- N/A
+
+V1.1.0
+- Fixed grammatical error with 'about-me' command.
+- Added background colors to links when they're are hovered.
+- Modified links to open in a new tab when clicked.
