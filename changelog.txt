@@ -6,3 +6,8 @@ V1.1.0
 - Fixed grammatical error with 'about-me' command.
 - Added background colors to links when they're are hovered.
 - Modified links to open in a new tab when clicked.
+- Added 'email' command
+
+V1.1.1
+- Added 'email' command to the list of commands from 'help'.
+- Added custom error 404 page.

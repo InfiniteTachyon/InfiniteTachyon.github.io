@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Not Found</title>
+
+        <style>
+            @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+
+            body{
+                background: black;
+                color: white;
+                font-family: 'Cascadia Code', sans-serif;
+            }
+            h1{
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+                color:yellow;
+            }
+            .cursor{
+              opacity: 1;
+              animation: blinker 1s linear infinite;
+            }
+            /**.sad{
+                position: absolute;
+                right: 150px;
+                justify-content: right;
+            }**/
+            .img{
+                position:absolute; 
+                left: -500px;
+                top:20px;
+            }
+            @keyframes blinker {
+              50% {
+                opacity: 0;
+              }
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h1>Error 404</h1>
+
+        <br><br><br><br>
+        <p><b>Action Forbidden.</b> The page you are trying to reach does not exist.</p>
+        <p>Return to the main page <a href="https://infinitetachyon.github.io/"><b>here</b></a>.</p>
+        
+
+        <div id="liner">
+            <b>></b>
+            <span id="current-line"></span><b class="cursor" id="cursor">█</b>
+        </div>
+        <div id="img">
+            <!--
+        <p id="sad" style="white-space: pre;">
+                                                                                                                                            ⠀⠀⠀⠀⠀⠀⠀⣠⠔⠚⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠑⠒⢤⡀⠀⠀⠀⠀⠀⠀
+                                                                                                                                ⠀⠀⠀⠀⣠⠖⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄⠀⠀⠀⠀
+                                                                                                                                ⠀⠀⢠⡞⠁⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠱⣄⠀⠀
+                                                                                                                                ⠀⡠⠃⠀⠀⠀⠀⠀⠀⣠⣿⡇⠀⠀⠀⠀⠀⠀⠸⣿⣆⠀⠀⠀⠀⠀⠀⠈⢦⠀
+                                                                                                                                ⢰⠁⠀⠀⣀⣤⣤⣶⣾⡿⠿⠤⣀⠀⠀⠀⠀⢀⡤⠿⠿⣿⣶⣦⣤⣀⠀⠀⠀⠇
+                                                                                                                                ⡇⠀⠀⠀⠙⡿⠛⠉⠀⣀⡀⠀⠈⠳⡀⢀⡴⠁⠀⠀⣀⡀⠈⠙⢻⠋⠀⠀⠀⢸
+                                                                                                                                ⡇⠀⠀⠀⢸⠁⠀⢠⣾⣿⣿⡆⠀⠀⡇⢸⠀⠀⢰⣿⣿⣿⡆⠀⠈⡇⠀⠀⠀⢸
+                                                                                                                                ⡇⠀⠀⠀⠘⡆⠀⠈⠿⢿⠿⠃⠀⠀⡇⠸⡀⠀⠘⠿⡿⠿⠃⠀⢀⠇⠀⠀⠀⢸
+                                                                                                                                ⡇⠀⠀⠀⠀⠘⠦⡀⠀⠀⠀⢀⡠⠊⠀⠀⠑⢄⣀⠀⠀⠀⢀⡤⠊⠀⠀⠀⠀⢸
+                                                                                                                                ⡅⠀⠀⠀⠀⠀⠀⠈⠉⠒⠋⠉⠀⠀⠀⠀⠀⠀⠉⠉⠚⠋⠁⠀⠀⠀⠀⠀⠀⢸
+                                                                                                                                ⠸⡄⠀⠀⠀⠀⠀⠀⠀⠀⣴⣶⣶⣶⣶⣶⣶⣶⣶⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆
+                                                                                                                                ⠀⠙⣄⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⡴⠋⠀
+                                                                                                                                ⠀⠀⠈⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⠃⠀⠀
+                                                                                                                                ⠀⠀⠀⠀⠙⢦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀
+                                                                                                                                ⠀⠀⠀⠀⠀⠀⠀⠑⠢⠤⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⠤⠔⠊⠃⠀⠀⠀⠀⠀⠀
+        </p> -->
+    </div>
+        <script></script>
+    </body>
+
+
+</html>

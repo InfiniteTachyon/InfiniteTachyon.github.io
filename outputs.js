@@ -2,6 +2,7 @@ help = [
   '  <span style="color: yellow;">about-me</span>       get to know me; my education, hobbies, etc.',
   '  <span style="color: yellow;">about-this</span>     get to know more about this project and its inspiration.',
   '  <span style="color: yellow;">socials</span>        links to my github and linkedin.',
+  '  <span style="color: yellow;">email</span>          email me! please don\'t spam me 🥺.',
   '  <span style="color: yellow;">clear</span>          clears the terminal.'
 ]
 
